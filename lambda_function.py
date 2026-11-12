@@ -195,7 +195,7 @@ class NoIntentHandler(AbstractRequestHandler):
 
 class HelpIntentHandler(AbstractRequestHandler):
     def can_handle(self, handler_input):
-        return ask_utils.is_intent_name("AMAZON.HelpIntent")(handler_input)
+        return ask_utils.is_intent_name("AMAZON.com.HelpIntent")(handler_input)
 
     def handle(self, handler_input):
         speak_output = "You can ask me to quiz you or teach you about a topic! How can I help?"
