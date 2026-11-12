@@ -194,6 +194,9 @@ class NoIntentHandler(AbstractRequestHandler):
 
 
 class HelpIntentHandler(AbstractRequestHandler):
+    """
+    A helper function for help hahaha
+    """
     def can_handle(self, handler_input):
         return ask_utils.is_intent_name("AMAZON.HelpIntent")(handler_input)
 
